@@ -22,5 +22,9 @@ public class Cliente extends Persona{
         this.planes = new ArrayList<>();
         this.productos = new ArrayList<>();
     }
+
+    public Plan getPlan(int i) {
+       return null; 
+    }
     
 }

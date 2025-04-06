@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Core.Productos;
 
-/**
- *
- * @author yader
- */
+import Core.Personas.Cliente;
+
 public class ProductoCliente {
-    
+    private boolean estadoCliente;
+    private int nivelAvance;
+    private Cliente cliente;
+    private Curso curso; 
 }
