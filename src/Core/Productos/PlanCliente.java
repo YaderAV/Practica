@@ -13,6 +13,8 @@ public class PlanCliente extends Producto{
         super(id, nombre, fechaInicio, fechaFin, estadoActivo, valor);
         this.cliente = cliente;
         this.plan = plan;
+        this.cliente.addPlan(this);
+        this.plan.addPlanCliente(this);
     }
 
     public Cliente getCliente() {
@@ -21,32 +23,5 @@ public class PlanCliente extends Producto{
 
     public Plan getPlan() {
         return plan;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public LocalDate getFechaInicio() {
-        return fechaInicio;
-    }
-
-    public LocalDate getFechaFin() {
-        return fechaFin;
-    }
-
-    public boolean isEstadoActivo() {
-        return estadoActivo;
-    }
-
-    public float getValor() {
-        return valor;
-    }
-    public void setEstadoActivo(boolean bool){
-        plan.setEstadoActivo(bool);
     }
 }

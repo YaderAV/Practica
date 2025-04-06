@@ -72,7 +72,7 @@ public class Clatzy {
 
     public void comprarPlan(Cliente cliente, Plan plan, LocalDate date) {
         for (PlanCliente plan1 : cliente.getPlanes()) {
-            if (plan1.isEstadoActivo()) {
+            if (plan1.getEstadoActivo()) {
                 System.out.println("El cliente " + cliente.getNombre() + " ya tiene un plan activo");
             } else {
                 cliente.getPlanes().add(plan1);

@@ -24,8 +24,12 @@ public class Instructor extends Persona{
     public ArrayList<Curso> getCursos() {
         return cursos;
     }
-    public void addCurso(Curso curso){
-        this.cursos.add(curso);
+    public boolean addCurso(Curso curso) {
+        if (!this.cursos.contains(curso)) {
+            this.cursos.add(curso);
+            return true;
+        }
+        return false;
     }
 
     public String getNombre() {

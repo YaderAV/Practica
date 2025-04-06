@@ -14,38 +14,14 @@ public class Plan extends Producto{
         this.valorMaximoCurso = valorMaximoCurso;
         this.planes = new ArrayList<>();
     }
-    public boolean setEstadoActivo(boolean bool){
-        return bool;
+    public float getValorMaximoCurso(){
+    return this.valorMaximoCurso;
     }
-    public LocalDate getFechaFin(){
-    return fechaFin;
+    public boolean addPlanCliente(PlanCliente plan) {
+        if (!this.planes.contains(plan)) {
+            this.planes.add(plan);
+            return true;
+        }
+        return false;
     }
-    public LocalDate getFechaInicio(){
-    return fechaInicio;
-    }
-
-    public float getValorMaximoCurso() {
-        return valorMaximoCurso;
-    }
-
-    public ArrayList<PlanCliente> getPlanes() {
-        return planes;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public boolean isEstadoActivo() {
-        return estadoActivo;
-    }
-
-    public float getValor() {
-        return valor;
-    }
-    
 }

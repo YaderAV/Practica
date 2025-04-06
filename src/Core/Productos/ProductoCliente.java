@@ -16,90 +16,17 @@ public class ProductoCliente extends Producto {
         this.nivelAvance = nivelAvance;
         this.cliente = cliente;
         this.curso = curso;
+        
+        this.cliente.addProducto(this);
+        this.curso.addProductoCliente(this);
     }
 
-    public boolean isEstadoCliente() {
-        return estadoCliente;
-    }
-
-    public int getNivelAvance() {
-        return nivelAvance;
-    }
-
+ 
     public Cliente getCliente() {
         return cliente;
     }
 
     public Curso getCurso() {
         return curso;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public LocalDate getFechaInicio() {
-        return fechaInicio;
-    }
-
-    public LocalDate getFechaFin() {
-        return fechaFin;
-    }
-
-    public boolean isEstadoActivo() {
-        return estadoActivo;
-    }
-
-    public float getValor() {
-        return valor;
-    }
-
-    public void setEstadoCliente(boolean estadoCliente) {
-        this.estadoCliente = estadoCliente;
-    }
-
-    public void setNivelAvance(int nivelAvance) {
-        this.nivelAvance = nivelAvance;
-    }
-
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
-    }
-
-    public void setCurso(Curso curso) {
-        this.curso = curso;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public void setFechaInicio(LocalDate fechaInicio) {
-        this.fechaInicio = fechaInicio;
-    }
-
-    public void setFechaFin(LocalDate fechaFin) {
-        this.fechaFin = fechaFin;
-    }
-
-    public void setEstadoActivo(boolean estadoActivo) {
-        this.estadoActivo = estadoActivo;
-    }
-
-    public void setValor(float valor) {
-        this.valor = valor;
-    }
-
-    
-    
-    
-    
+    } 
 }
