@@ -24,7 +24,7 @@ public class Clatzy {
     public Clatzy() {
     }
     public void addInstructor(String nombre, String cedula, String numero, String correo){
-    
+        
     }
     public void addCurso(int id, String nombre, LocalDate date, float valor, Instructor instructor){
     
@@ -39,7 +39,8 @@ public class Clatzy {
         return null;
     }
     public Cliente getCliente(int index){
-        return null;
+        Cliente c= new Cliente("juan","","",""); 
+        return c;
     }
     public Curso getCurso(int index){
         return null; 
@@ -62,6 +63,6 @@ public class Clatzy {
     }
 
     public Plan getPlan(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return null;
     }
 }

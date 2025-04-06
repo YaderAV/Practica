@@ -17,7 +17,7 @@ public class Cliente extends Persona{
     private ArrayList<Plan> planes; 
     private ArrayList<Producto> productos;
 
-    public Cliente(ArrayList<Plan> planes, ArrayList<Producto> productos, String nombre, String cedula, String telefono, String email) {
+    public Cliente( String nombre, String cedula, String telefono, String email) {
         super(nombre, cedula, telefono, email);
         this.planes = new ArrayList<>();
         this.productos = new ArrayList<>();
