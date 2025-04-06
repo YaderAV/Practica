@@ -5,14 +5,14 @@ import Core.Personas.Cliente;
 import java.time.LocalDate;
 
 public class ProductoCliente extends Producto {
-    private boolean estadoCliente;
+    private boolean estadoAprobado;
     private int nivelAvance;
     private Cliente cliente;
     private Curso curso; 
 
-    public ProductoCliente(boolean estadoCliente, int nivelAvance, Cliente cliente, Curso curso, int id, String nombre, LocalDate fechaInicio, LocalDate fechaFin, boolean estadoActivo, float valor) {
+    public ProductoCliente(int id, String nombre, LocalDate fechaInicio, LocalDate fechaFin, boolean estadoActivo, double valor, boolean estadoAprobado, int nivelAvance, Cliente cliente, Curso curso) {
         super(id, nombre, fechaInicio, fechaFin, estadoActivo, valor);
-        this.estadoCliente = estadoCliente;
+        this.estadoAprobado = estadoAprobado;
         this.nivelAvance = nivelAvance;
         this.cliente = cliente;
         this.curso = curso;

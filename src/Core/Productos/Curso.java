@@ -10,7 +10,7 @@ public class Curso extends Producto {
     private ArrayList<Instructor> instructores; 
     private ArrayList<ProductoCliente> productosCliente;
 
-    public Curso( int id, String nombre, LocalDate fechaInicio, LocalDate fechaFin, boolean estadoActivo, float valor, Instructor instructor) {
+    public Curso( int id, String nombre, LocalDate fechaInicio, LocalDate fechaFin, boolean estadoActivo, double valor, Instructor instructor) {
         super(id, nombre, fechaInicio, fechaFin, estadoActivo, valor);
         this.instructores = new ArrayList<>();
         this.productosCliente = new ArrayList<>();
@@ -43,10 +43,5 @@ public class Curso extends Producto {
 
     public boolean isEstadoActivo() {
         return estadoActivo;
-    }
-
-    public float getValor() {
-        return valor;
-    }
-    
+    } 
 }

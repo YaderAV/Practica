@@ -9,9 +9,9 @@ public abstract class Producto {
     protected LocalDate fechaInicio; 
     protected LocalDate fechaFin;
     protected boolean estadoActivo;
-    protected float valor;
+    protected double valor;
 
-    public Producto(int id, String nombre, LocalDate fechaInicio, LocalDate fechaFin, boolean estadoActivo, float valor) {
+    public Producto(int id, String nombre, LocalDate fechaInicio, LocalDate fechaFin, boolean estadoActivo, double valor) {
         this.id = id;
         this.nombre = nombre;
         this.fechaInicio = fechaInicio;
@@ -37,7 +37,7 @@ public abstract class Producto {
         return estadoActivo;
     }
 
-    public float getValor() {
+    public double getValor() {
         return valor;
     }
 
